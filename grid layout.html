@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        main{
+            width: 1200px;
+            height: 800px;
+            background-color: hwb(84 61% 4%);
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        nav, header, footer {
+            background-color: hwb(80 50% 10%); height: 140px; text-align: center; line-height: 140px;
+        }
+        section{
+            height: 300px; 
+            background-color: hwb(68 13% 16%);
+            display: flex; flex-direction: row; gap: 10px;
+        }
+        .box{
+            flex-grow: 1;
+            background-color: hwb(66 48% 7%);
+            text-align: center;
+            line-height: 300px;
+        }
+    </style>
+</head>                 
+<body>
+    <main>
+        <nav><h2>LOGO</h2></nav>
+        <header><h2>HEADER</h2></header>
+        <nav><h2>TEXT AREA</h2></nav>
+        <section>
+            <div class="box"><h2>BOX 1</h2></div>
+            <div class="box"><h2>BOX 2</h2></div>
+            <div class="box"><h2>BOX 3</h2></div>
+        </section>
+        <footer><h2>FOOTER</h2></footer>
+    </main>
+    
+</body>
+</html>
